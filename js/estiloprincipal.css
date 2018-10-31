@@ -1,0 +1,388 @@
+﻿	html{
+	height:100%;
+}
+
+    body {
+	height:100%;
+	background:#404a54;
+	
+}
+
+
+
+	#contenedor{
+		
+	margin: auto;
+	margin-bottom: 20px;
+	width: 1320px;
+	height: 300px;
+	position:relative;
+	top: 3px;
+	bottom: 0px;
+	background-color: #27a2ff ;
+	border-radius: 0px 0px;
+	box-shadow: 3px 3px 10px
+	}
+
+
+
+
+
+	#contenedor2{
+	margin: auto;
+	margin-bottom: 0px;
+	width: 1100px;
+	height: 720px;
+	position: relative;
+	top: 1px;
+	bottom: 0px;
+	background-color: #FFFFFF;
+	border-radius: 0px 0px;
+	box-shadow: 3px 3px 10px
+	}
+
+	#logo{
+	
+	position:relative;
+	top:15px;
+	left:30px;
+	width: 20px;
+	height: 0;
+	z-index: 1;
+	}
+
+	#logo2{
+		
+	left:1050px;
+	width: 20px;
+	position:relative;
+	top:1px;
+	height: 0;
+	z-index: 1;
+	}
+
+
+
+
+	#cabecera {
+	font-family: Monotype Corsiva;
+	font-size: 100px;
+	text-align: center;
+	color: #777;
+	background-color: #000033;
+	/*padding: 10px;*/
+	/*margin-top: 10px;*/
+	position: relative;
+	top: 100px;
+	left: 100px;
+	width: 85%;
+	height: 150px;
+}
+	
+
+
+	/*Definimos el estilo al mennu principal horizontal aplicando un ancho del 100%*/
+div#menu {
+	background-color: rgba(0,0,51,0.7);
+	position: relative;
+	top: 5px;
+	width: 71%;
+	height: 30px;
+	font-family: Arial;
+	font-size: 1.1em;
+	z-index: 1;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 0px 0px;
+	box-shadow: 3px 3px 10px
+}
+
+/*Eliminamos el circulo de los list item del menu horizontal*/
+div#menu li {
+   float:left;
+   position:relative;       
+   list-style-type:none;
+
+}
+/*Definimos que los enlaces estan activos para todo su recuadro mediante display con el valor block*/
+div#menu a {
+  display: block; 
+   position:relative;        
+  text-decoration: none;      
+  color:#069;     
+  padding: 4px 25px;      
+   	background-color: rgba(0,0,51,0.7);
+	text-align:center;
+   color: #fff;
+  
+   
+}
+/*Definimos un color distinto para cuando pasa la flecha del mouse sobre el hipervÃ­nculo, tanto para la
+letra como el fondo*/
+div#menu a:hover {
+	color: #FFF;
+	 position:relative; 
+	background: #025587;
+	border-radius: 1px 1px;
+	box-shadow: 3px 3px 3px
+}
+  /*Definimos posiciÃ³n absoluta para los submenÃºes (con esto hacemos que aparezca sobre el contenido actual
+de la pÃ¡gina):   */
+div#menu ul li ul {
+   position:absolute;       
+   width:10em;}
+/*Creamos una lÃ­nea en la parte inferior de la opciÃ³n para separaciÃ³n*/
+div#menu ul li ul li {
+   width:100%;        
+   border-bottom:1px solid #fff;
+   / background-color: rgba(0,147,209,3);
+}
+/*Inicialmente no se muestra ninguna opciÃ³n*/
+body div#menu ul li ul {
+  display:none;
+}
+/*Mostramos el menÃº horizontal y el submenÃº que corresponde cuando se pasa la flecha del mouse
+sobre la opciÃ³n*/
+div#menu ul li:hover ul, div#menu ul li ul:hover {
+  display:block;
+}
+	
+
+  #contenido{
+	font-family: Monotype Corsiva;
+	font-size: 20px;
+	color: #003366;
+	/* [disabled]text-align: center; */
+	position: relative;
+	top: -100px;
+	/*buen color #85d7f7 
+  background-color: #85d7f7;*/
+	width: 65%;
+	height: 70%;
+	float: left;
+	left: 80px;
+	margin-top: 110px;
+   }
+   
+ #barra{
+	font-family: Arial;
+	font-size: 20px;
+	color: #000000;
+	text-align: center;
+	position: relative;
+	top: 0 px;
+	float: right;
+	margin-top: 10px;
+        }
+
+ #pie{
+	font-family: Monotype Corsiva;
+	font-size: 20px;
+	color: ;
+	text-align: center;
+	position: relative;
+	width: 1100px;
+	height: 65px;
+	margin-top: 10px;
+	margin: auto;
+	margin-bottom: 10px;
+	background-color: #27a2ff;
+	border-radius: 0px 0px;
+	box-shadow: 3px 3px 3px
+      }
+
+    #anuncio{
+   border-radius: 10px 20px; frameborder="0" 
+   width="250" 
+   height="200"
+   marginwidth="0" 
+   marginheight="0" 
+   background-color: rgba(0,125,175,0.5);
+    }
+
+ #codigo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	overflow: auto;
+	color: #000;
+}
+
+ .codigo {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  overflow: auto;
+  color: #000;
+}
+
+p {
+	margin-left: 10;
+    font-family:arial;
+	font-size:20px;  
+	color: #FFFFFF;
+}
+
+h1{
+	margin-left: 10;
+	font-family: Monotype Corsiva;
+	font-size: 40px;
+	color: #000000;
+	text-align: center;
+	font-weight: 700;
+}
+
+h2{
+	margin-left: 10;
+	font-family: Monotype Corsiva;
+	font-size: 40px;
+	color: #003333;
+	text-align: center;
+	font-weight: 700;
+}
+
+h3{
+	margin-left: 10;
+	font-family: sans-serif;
+	font-size: 25px;
+	color: #000000;
+	text-align: justify;
+	font-weight: 400;
+}
+
+h4{
+	margin-left: 10;
+	font-family: Arial;
+	font-size: 16px;
+	color: #000000;
+	text-align: left;
+	font-weight: 700;
+}
+
+a{
+ text-decoration: none;
+ color: #fff;
+ text-align:center
+}
+
+a:hover
+{
+	color: #999;
+}
+
+a:visited 
+{
+	color:fff;
+}
+
+
+#marco {
+	scrollbar-face-color: #0000ff;
+	scrollbar-highlight-color: #6685CA;
+	scrollbar-shadow-color: #6685CA;
+	scrollbar-3dlight-color: #0000FF;
+	/* [disabled]scrollbar-arrow-color:#FFFFFF; */
+	scrollbar-track-color: #E5E5E5;
+	scrollbar-drakshadow-color: #000000;
+	text-align: center;
+	font-family: Arial;
+	font-size: 25px;
+	
+}
+
+
+
+	#tabla{
+	font-family: Arial;
+	font-size: 18px;
+	color: #0099FF;
+	text-align: center;
+	top: 0 px;
+	float: center;
+        }
+		
+	div#a{
+	text-decoration: none;
+	color: #000;
+	text-align: center
+}
+
+/* permite cambiar el color del Texto al pasar el cursor */
+div#a2:hover
+{
+	color: #000;
+}
+
+div#a2:visited 
+{
+	color:fff;
+}
+	
+
+ td:hover {
+	color: #0CF;
+	position: relative;
+	background: #025587;
+	border-radius: 5px 5px;
+	box-shadow: 3px 3px 3px
+}
+
+
+
+#insertar{
+  width:380px;
+  margin:0 auto;
+  margin-top:2px;
+  margin-bottom:2%;
+  transition:opacity 1s;
+  -webkit-transition:opacity 1s;
+  margin-left:5px;
+}
+
+#insertar h1{
+  background:#3399cc;
+  padding:20px;
+  font-size:14%;
+  font-weight:300;
+  text-align:left;
+  color:#fff;
+}
+#insertar p{
+  background:#f0f0f0;
+  padding:10px;
+  font-size:16%;
+  font-weight:20;
+  text-align:center;
+  color:#555;
+  width:90%;
+}
+form{
+  background:#f0f0f0;
+  padding:3% 3%;
+}
+
+#insertar2{
+  width:100px;
+  margin:0 auto;
+  margin-top:2px;
+  margin-bottom:2%;
+  transition:opacity 1s;
+  -webkit-transition:opacity 1s;
+  margin-left:40px;
+}
+
+#insertar2 h1{
+  background:#3399cc;
+  padding:20px;
+  font-size:14%;
+  font-weight:300;
+  text-align:left;
+  color:#fff;
+}
+#insertar2 p{
+  background:#f0f0f0;
+  padding:10px;
+  font-size:14%;
+  font-weight:20;
+  text-align:left;
+  color:#555;
+  width:90%;
+}
