@@ -22,17 +22,17 @@ $menu=<<<TEXTO
       
       <ul>
         <li><a href="./registro_trabajador.php">Nuevo</a></li>
-        <li><a href="./mostrarusuarios.php">Buscar</a></li>
         <li><a href="./modificar_trabajador.php?idtrabajador=">Modificar</a></li>
         <li><a href="./eliminar_trabajador.php?idtrabajador=">Eliminar</a></li>
+         <li><a href="./mostrarusuarios.php">Visualizar</a></li>
        </ul>
     </li>
    <li><a href="#">Compras</a> 
       <ul>
         <li><a href="./registro_compras.php">Nuevo</a></li>
-        <li><a href="./mostrarcompras.php">Buscar</a></li>
          <li><a href="./modificar_compras.php?idcompras=">Modificar</a></li>
         <li><a href="./eliminar_compras.php?idcompras=">Eliminar Compra</a></li>
+         <li><a href="./mostrarcompras.php">visualizar</a></li>
         
        </ul>
     </li>
@@ -40,9 +40,9 @@ $menu=<<<TEXTO
     <li><a href="#">Bienes</a> 
       <ul>
      <li><a href="./registro_bienes.php">Nuevo</a></li>
-     <li><a href="./mostrarbienes.php">Buscar</a></li>
-        <li><a href="./modificar_bienes.php?camb=">Modificar</a></li>
+      <li><a href="./modificar_bienes.php?camb=">Modificar</a></li>
         <li><a href="./eliminar_bienes.php?camb="">Eliminar</a></li>
+        <li><a href="./visualizar_bienes.php">Visualizar</a></li>
        </ul>
     </li>
     
@@ -52,9 +52,9 @@ $menu=<<<TEXTO
       <ul>
 
         <li><a href="./registro_salidas.php">Nuevo</a></li>
-        <li><a href="./mostrarbienes.php">Buscar</a></li>
         <li><a href="./modificar_salidas.php">Modificar</a></li>
         <li><a href="./eliminar_salidas.php?idsalidas=">Eliminar Salida</a></li>
+        <li><a href="./mostrarbienes.php">Visualizar</a></li>
 
       </ul>
     </li>
