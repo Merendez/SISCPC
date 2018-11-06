@@ -20,7 +20,7 @@ $menu=<<<TEXTO
         <li><a href="./resources/registro_trabajador.php">Nuevo</a></li>
         <li><a href="./resources/modificar_trabajador.php?idtrabajador=">Modificar</a></li>
         <li><a href="./resources/eliminar_trabajador.php?idtrabajador=">Eliminar</a></li>
-        <li><a href="./resources/mostrarusuarios.php">visualizar</a></li>
+        <li><a href="./resources/visualizar_trabajador.php">Visualizar</a></li>
        </ul>
     </li>
    <li><a href="#">Compras</a> 
@@ -28,7 +28,7 @@ $menu=<<<TEXTO
         <li><a href="./resources/registro_compras.php">Nuevo</a></li>
         <li><a href="./resources/modificar_compras.php?idcompras=">Modificar</a></li>
         <li><a href="./resources/eliminar_compras.php?idcompras=">Eliminar Compra</a></li>
-           <li><a href="./resources/mostrarcompras.php">visualizar</a></li>
+           <li><a href="./resources/Visualizar_compras.php">visualizar</a></li>
         
        </ul>
     </li>
@@ -50,7 +50,7 @@ $menu=<<<TEXTO
         <li><a href="./resources/registro_salidas.php">Nuevo</a></li>
         <li><a href="./resources/modificar_salidas.php">Modificar</a></li>
         <li><a href="./resources/eliminar_salidas.php?idsalidas=">Eliminar</a></li>
-            <li><a href="./resources/mostrarsalidas.php">visualiar</a></li>
+            <li><a href="./resources/visualizar_salidas.php">Visualizar</a></li>
 
       </ul>
     </li>

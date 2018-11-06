@@ -1,6 +1,6 @@
 <?php 
 include("../conexion.php");
-function mostrarcompras(){
+function mostrarsalidas(){
 /* ----Conexion con Base de Datos---- */
 
 $server= servidor();
@@ -31,8 +31,6 @@ echo "<tr> <td><strong>Consecutivo</strong></td>
 
 		  <td><strong>Cantidad</strong></td>
 
-		  <td><strong>Precio</strong></td>
-
 		  <td><strong>idtrabajador</strong></td>
 
 		  <td><strong>camb</strong></td>
@@ -54,13 +52,11 @@ do {
 
 //Guardadndo en variables resultado de consulta sql
 
-$idcomras=$row["idsalidas"];
+$idsalidas=$row["idsalidas"];
 
 $fecha=$row["fecha"];
 
 $cantidad=$row["cantidad"];
-
-$precio=$row["precio"];
 
 $idtrabajador=$row["idTRABAJADOR"];
 
@@ -75,8 +71,6 @@ $todo.="<tr><td>".$contador."</td>
 		  <td>".$row["fecha"]."</td>
 
 		  <td>".$row["cantidad"]."</td>
-
-		  <td>".$row["precio"]."</td>
 
 		  <td>".$row["idTRABAJADOR"]."</td>
 

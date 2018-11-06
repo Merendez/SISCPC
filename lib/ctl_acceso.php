@@ -43,7 +43,7 @@ session_start();
 está o no “logueado” un usuario*/
 //session_register("controlador")
 
-$_SESSION["validando"] = "OK";	
+$_SESSION["loggedin"] = true;	
 //$_SESSION["user"] = mysqli_result($myclave,0,0);  //Modifique esta linea original
 $_SESSION["user"] = $myclave; 
 //nombre del usuario logueado.

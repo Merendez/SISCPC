@@ -1,44 +1,18 @@
 <?php 
-include("../conexion.php");
-//obteniendo el id trabajador
-$idtrabajador_obtenido=$_GET["idtrabajador"];
-if($idtrabajador_obtenido== ""){
-// obtener los id trabajador almacenados
-
-$server= servidor();
-
-$base = basedatos();
-
-$usuario=usuario();
-
-$contrasena=contrasena();
-
-$link = mysqli_connect($server,$usuario,$contrasena);
-mysqli_select_db($link,$base);
-$result= mysqli_query($link, "select * from trabajador" );
-
-if ($row=mysqli_fetch_array($result, MYSQLI_BOTH)) // si la variable tiene una sola fila entonces seguimos con el codigo
- {
-$combobit="";
-do{
-$combobit.="<option value='".$row['idtrabajador']."'>".$row['idtrabajador']."</option>";
-
-} 
-while($row=mysqli_fetch_array($result, MYSQLI_BOTH));
-}
-else { echo "no hubo resultados";}
-mysqli_close($link);
-
+$idtrabajador_obtenido=$_POST["idtrabajador"];
 $contenidodinamico= <<<TEXTO
-<form name="form1" action= "./registro_usuarios2.php?idtrabajador=" METHOD="POST">
-idtrabajador:
-<select name ="idtrabajador"> echo $combobit;</select>
-<center><input name="validar" type="submit" value = "Validar" /> <br/> </center>
+<FORM name="formulario" method="post" action="registro_usuarios_funcion.php" >
 
+<input name="idTrabajador" type="text" value="$idtrabajador_obtenido" id="Texto1" onkeypress="return valida(event)" />
+
+<input name="contrasena" type="text" placeholder="contrasena" id="Texto2" />
+
+<input name="tipo" type="text" placeholder="tipo" id= "Texto3"  />
+
+<input name="estado" type="text" placeholder="estado" id= "Texto3" onkeypress="return valida(event)" />
+
+<input name="insertar" type="submit" value="INSERTAR" id="bEnviar" />
 TEXTO;
-}//fin if de trabajador obtenido nulo
-
-
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -52,8 +26,6 @@ TEXTO;
     
  <link href="estilos_locales/estilo2.css" rel="stylesheet" type="text/css" />
 
- <link href="estilos_locales/insertar.css" rel="stylesheet" type="text/css" />
-
     <link rel="stylesheet" type="text/css" href="../js/easy-slider-css.css">
 
     
@@ -63,9 +35,22 @@ TEXTO;
      <script language="javascript">
 
 function modiframe(destino)
+
 {
 document.getElementById("marco").src=destino
 }
+
+function valida(e)
+{
+  tecla=(document.all) ? e.keyCode : e.which;
+  //tecla de reproceso para borar siempre se permite 
+if (tecla==8) {return true;}
+//patron de entrada solo para numeros
+patron=/[0-9]/;
+tecla_final=String.fromCharCode(tecla);
+return patron.test(tecla_final);
+}
+
 </script>  
 </head>
 
@@ -107,9 +92,16 @@ echo ($mimenu);
 <div id="contenido" >
 <div id="insertar" >
 
+<h1>
+datos de los usuarios
+</h1>
+
 <?php 
 echo ($contenidodinamico);
 ?>
+
+
+
 
 
 

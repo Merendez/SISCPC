@@ -1,4 +1,6 @@
-<?php ?>
+<?php 
+include './lib/seguridad.php';
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -92,14 +94,31 @@ Preservar las aguas nacionales y sus bienes públicos inherentes para su adminis
 <div id="barra">
 
 
+
+
+
 <div id="enlaces"><center>
+
+<h3>Sitios Sugeridos!</h3></center></br>
+
+<a href="http://sina.conagua.gob.mx/sina/almacenamientoPresas.php"><img src="./imagenes/enlace1.jpg" alt="nombre" border="0"></br>Monitoreo presas</a> </br></br></br>
+
+<a href="https://www.gob.mx/conagua/documentos/avisos-de-privacidad-conagua"><img src="imagenes/enlace2.jpg" alt="nombre" border="0"></br>Avisos de privacidad</a> </br></br></br>
+
+<a href="https://www.gob.mx/conagua/acciones-y-programas/publicaciones-de-la-comision-nacional-del-agua"><img src="./imagenes/enlace3.jpg" alt="nombre" border="0" width="100" height="90"></br>s de la s</a> </br></br></br>
+
+
 
 
 
 
 </div> <!-- fin div enlaces -->
 
+
+
 </div><!--div barra-->
+
+
 
 </div><!--fin div contenedor-->
 

@@ -65,7 +65,7 @@ echo ($mimenu);
 <div id="contenedor2">
 
 <div id="contenido" >
-<div id="mostrarcompras" >
+<div id="mostrarsalidas" >
 
 <h1>Salidas Registradas</h1>
 <div class="Style_Table">
