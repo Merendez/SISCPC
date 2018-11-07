@@ -1,4 +1,5 @@
-<?php 
+<?php
+include './lib/seguridad.php'; 
 include("../conexion.php");
 //obteniendo valores de las cajas de texto
 $idTrabajador= htmlentities($_POST["idTrabajador"] );

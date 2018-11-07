@@ -1,4 +1,5 @@
 <?php
+include './lib/seguridad.php';
 include("../conexion.php"); 
 $idcompras= htmlentities($_GET["idcompras"] );
 $fecha= htmlentities($_POST["fecha"] );

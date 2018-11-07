@@ -1,4 +1,5 @@
-<?php 
+<?php
+include './lib/seguridad.php'; 
 include("../conexion.php");
 /* A continuación, realizamos la conexión con nuestra base de datos en MySQL */
 

@@ -1,4 +1,6 @@
 <?php 
+include './lib/seguridad.php';
+
 $idtrabajador_obtenido=$_POST["idtrabajador"];
 $contenidodinamico= <<<TEXTO
 <FORM name="formulario" method="post" action="registro_usuarios_funcion.php" >

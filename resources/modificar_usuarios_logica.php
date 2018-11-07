@@ -1,4 +1,5 @@
 <?php 
+include './lib/seguridad.php';
 include("../conexion.php");
 $idTrabajador_obtenido=$_POST["idTrabajador"];
 $contrasena_obtenido=$_POST["contrasena"];

@@ -1,4 +1,5 @@
-<?php 
+<?php
+include './lib/seguridad.php'; 
 include("../conexion.php");
 //obteniendo el id bien
 $camb_obtenido=$_POST["camb"];

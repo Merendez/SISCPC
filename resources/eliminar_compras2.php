@@ -1,4 +1,5 @@
-<?php 
+<?php
+include './lib/seguridad.php'; 
 include("../conexion.php");
 //obteniendo el id bien
 $idcompras_obtenido=$_POST["idcompras"];

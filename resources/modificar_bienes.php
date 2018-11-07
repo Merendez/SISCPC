@@ -1,4 +1,5 @@
 <?php 
+include './lib/seguridad.php';
 include("../conexion.php");
 //obteniendo el id bienes
 $camb_obtenido=$_GET["camb"];

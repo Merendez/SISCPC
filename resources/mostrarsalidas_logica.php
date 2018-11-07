@@ -1,4 +1,5 @@
 <?php 
+include './lib/seguridad.php';
 include("../conexion.php");
 function mostrarsalidas(){
 /* ----Conexion con Base de Datos---- */
