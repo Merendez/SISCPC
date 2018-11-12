@@ -1,5 +1,5 @@
 <?php 
-include './lib/seguridad.php';
+include '../lib/seguridad.php';
 include("../conexion.php");
 //obteniendo el id bien
 $idTrabajador_obtenido=$_POST["idTrabajador"];

@@ -1,11 +1,11 @@
 <?php 
-include './lib/seguridad.php';
+include '../lib/seguridad.php';
 
-$idtrabajador_obtenido=$_POST["idtrabajador"];
+$idTrabajador_obtenido=$_POST["idTrabajador"];
 $contenidodinamico= <<<TEXTO
 <FORM name="formulario" method="post" action="registro_usuarios_funcion.php" >
 
-<input name="idTrabajador" type="text" value="$idtrabajador_obtenido" id="Texto1" onkeypress="return valida(event)" />
+<input name="idTrabajador" type="text" value="$idtrabajador_obtenido" id="Texto1" onkeypress="return valida(event)" readonly />
 
 <input name="contrasena" type="text" placeholder="contrasena" id="Texto2" />
 

@@ -1,5 +1,5 @@
 <?php 
-include './lib/seguridad.php';
+include '../lib/seguridad.php';
 include("../conexion.php");
 //obteniendo el id bienes
 $idTrabajador_obtenido=$_GET["idTrabajador"];

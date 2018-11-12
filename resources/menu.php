@@ -9,7 +9,7 @@ $menu=<<<TEXTO
  <li><a href="#">Usuarios</a> 
       
       <ul>
-        <li><a href="./registro_usuarios.php">Nuevo</a></li>
+        <li><a href="./registro_usuarios.php?idTrabajador=">Nuevo</a></li>
         <li><a href="./modificar_usuarios.php?idTrabajador=">Modificar</a></li>
         <li><a href="./eliminar_usuarios.php?idTrabajador=">Eliminar</a></li>
        </ul>

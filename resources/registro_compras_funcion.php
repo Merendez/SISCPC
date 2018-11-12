@@ -1,5 +1,5 @@
 <?php 
-include './lib/seguridad.php';
+include '../lib/seguridad.php';
 include("../conexion.php");
 //obteniendo valores de las cajas de texto
 
@@ -14,7 +14,6 @@ $CAMB= htmlentities($_POST["camb"] );
 
 //VISUALIZANDO VALORES
 echo("valores de las variables <br>");
-echo ("idcompras: ".$idcompras."<br>");
 echo ("fecha: ".$fecha."<br>");
 echo ("cantidad: ".$cantidad."<br>");
 echo ("precio: ".$precio."<br>");
@@ -36,12 +35,23 @@ $link = mysqli_connect($server,$usuario,$contrasena);
 mysqli_select_db($link,$base);
 
 //Revisando Consulta (query)
-$sql="INSERT INTO COMPRAS(idcompras, fecha, cantidad, precio, idTRABAJADOR, CAMB)VALUES('$idcompras', '$fecha', '$cantidad', '$precio',         '$idTRABAJADOR','$CAMB')";
-
+$sql="INSERT INTO COMPRAS(fecha, cantidad, precio, idTRABAJADOR, CAMB)VALUES('$fecha', '$cantidad', '$precio',         '$idTRABAJADOR','$CAMB')";
 if(mysqli_query($link,$sql)){
+	$sql2 ="update bienes set existencia=existencia+'".$cantidad."' where camb='".$CAMB."'";
+	if(mysqli_query($link,$sql2)){
+		echo'<script type="text/javascript">
+    alert("Aumentaron las existencias");
+   
+    </script>';
+}else{
 	echo'<script type="text/javascript">
-    alert("Registro Guardado");
-    window.location.href="registro_compras.php";
+    alert("no se afecto inventario");
+  
+    </script>';
+}
+	echo'<script type="text/javascript">
+    alert("Compra efectuada");
+    
     </script>';
 } else {
 

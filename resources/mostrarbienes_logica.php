@@ -1,5 +1,5 @@
 <?php 
-include './lib/seguridad.php';
+include '../lib/seguridad.php';
 include("../conexion.php");
 function mostrarbienes(){
 /* ----Conexion con Base de Datos---- */

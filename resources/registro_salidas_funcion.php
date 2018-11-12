@@ -1,5 +1,5 @@
 <?php 
-include './lib/seguridad.php';
+include '../lib/seguridad.php';
 include("../conexion.php");
 //obteniendo valores de las cajas de texto
 $idsalidas= htmlentities($_POST["idsalidas"] );
@@ -37,14 +37,29 @@ mysqli_select_db($link,$base);
 $sql="INSERT INTO SALIDAS(idsalidas, fecha, cantidad, idTRABAJADOR, CAMB)VALUES('$idsalidas', '$fecha', '$cantidad', '$idTRABAJADOR','$CAMB')";
 
 if(mysqli_query($link,$sql)){
+	$sql2 ="update bienes set existencia=existencia-'".$cantidad."' where camb='".$CAMB."'";
+	if(mysqli_query($link,$sql2)){
+		echo'<script type="text/javascript">
+    alert("Disminuyeron las existencias");
+   
+    </script>';
+}else{
 	echo'<script type="text/javascript">
-    alert("Registro Guardado");
+    alert("no se afecto inventario");
+  
+    </script>';
+}
+	echo'<script type="text/javascript">
+    alert("Compra efectuada");
     window.location.href="registro_salidas.php";
     </script>';
 } else {
 
 	echo ("Resgistro Fallido <br>");
 	echo "Error: " . $sql . "<br>" . mysqli_error($link);
+
+
+
 	
 }
 mysqli_close($link); //se cierra la conexion

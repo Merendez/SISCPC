@@ -6,7 +6,7 @@ $menu=<<<TEXTO
  <li><a href="#">Usuarios</a> 
       
       <ul>
-        <li><a href="./resources/registro_usuarios.php">Nuevo</a></li>
+        <li><a href="./resources/registro_usuarios.php?idTrabajador=">Nuevo</a></li>
         <li><a href="./resources/modificar_usuarios.php?idTrabajador=">Modificar</a></li>
         <li><a href="./resources/eliminar_usuarios.php?idTrabajador=">Eliminar</a></li>
        </ul>
