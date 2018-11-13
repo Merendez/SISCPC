@@ -22,7 +22,7 @@ if ($row=mysqli_fetch_array($result, MYSQLI_BOTH)) // si la variable tiene una s
  {
 $combobit="";
 do{
-$combobit.="<option value='".$row['camb']."'>".$row['camb']."</option>";
+$combobit.="<option value='".$row['camb']."'>".$row['camb']." - ".$row['descripcion']."</option>";
 
 } 
 while($row=mysqli_fetch_array($result, MYSQLI_BOTH));

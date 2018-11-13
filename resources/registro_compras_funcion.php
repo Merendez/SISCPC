@@ -51,7 +51,7 @@ if(mysqli_query($link,$sql)){
 }
 	echo'<script type="text/javascript">
     alert("Compra efectuada");
-    
+    window.location.href="registro_compras.php";
     </script>';
 } else {
 
