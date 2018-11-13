@@ -46,7 +46,7 @@ $contenidodinamico= <<<TEXTO
 
 <input name="estado" type="text" value="estado" id="Texto3" />
 
-<input name="eliminar" type="submit"  value="eliminar" id="bEnviar" />
+<input name="eliminar" type="submit"  value="Eliminar" id="bEnviar" />
 
 </form>
 TEXTO;
@@ -117,7 +117,7 @@ echo ($mimenu);
 <div id="contenedor2">
 
 <div id="contenido" >
-<h1>ELIMNAR BIEN </h1>
+<h1>ELIMNAR USUARIO </h1>
 <div id="insertar" >
 
 <?php 

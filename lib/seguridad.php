@@ -3,6 +3,8 @@
 //Reanudamos la sesión
 
 @session_start();
+$id=$_SESSION["user"];
+$nombredeusuario=$_SESSION["nombre"];
 
 
 

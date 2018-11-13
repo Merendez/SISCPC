@@ -32,7 +32,7 @@ mysqli_close($link);
 
 $contenidodinamico= <<<TEXTO
 <form name="form1" action= "./modificar_usuario2.php?idTrabajador=" method="post">
-CAMB:
+CLAVE DEL USUARIO:
 <select name ="idTrabajador"> echo $combobit;</select>
 <center><input name="validar" type="submit" value = "Validar" /> <br/> </center>
 TEXTO;

@@ -13,7 +13,7 @@ $contenidodinamico= <<<TEXTO
 
 <input name="estado" type="text" placeholder="estado" id= "Texto3" onkeypress="return valida(event)" />
 
-<input name="insertar" type="submit" value="INSERTAR" id="bEnviar" />
+<input name="insertar" type="submit" value="Insertar" id="bEnviar" />
 TEXTO;
 
 ?>
@@ -95,7 +95,7 @@ echo ($mimenu);
 <div id="insertar" >
 
 <h1>
-datos de los usuarios
+Datos de los usuarios
 </h1>
 
 <?php 

@@ -43,7 +43,7 @@ $contenidodinamico= <<<TEXTO
 
 <input name="existencia" type="text" value="$existencia" id="Texto3" />
 
-<input name="eliminar" type="submit"  value="eliminar" id="bEnviar" />
+<input name="eliminar" type="submit"  value="Eliminar" id="bEnviar" />
 
 </form>
 TEXTO;

@@ -44,7 +44,7 @@ IdTrabajador </br>
 CAMB</br> 
 <input name="camb" type="text" value="$camb" id="Texto6" readonly  />
 
-<input name="insertar" type="submit" value="MODIFICAR" id="bEnviar" />
+<input name="insertar" type="submit" value="Modificar" id="bEnviar" />
 
 </form>
 TEXTO;

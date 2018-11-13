@@ -76,7 +76,7 @@ echo ($mimenu);
 <div id="contenido" >
 <div id="insertar" >
 <h1>
-datos del trabajador 
+Datos del trabajador 
 </h1>
 
 </br>
@@ -100,7 +100,7 @@ datos del trabajador
 
 <input name="puesto" type="text" placeholder="puesto" id="Texto9" />
 
-<input name="insertar" type="submit" value="insertar" id="bEnviar" />
+<input name="insertar" type="submit" value="Insertar" id="bEnviar" />
 
 </form>
 

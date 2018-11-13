@@ -35,7 +35,7 @@ mysqli_close($link);
 
 $contenidodinamico= <<<TEXTO
 <form name="form1" action= "./eliminar_salidas2.php?idsalidas=" method="post">
-CAMB:
+CLAVE DA LA SALIDA:
 <select name ="idsalidas"> echo $combobit;</select>
 <center><input name="validar" type="submit" value = "Validar" /> <br/> </center>
 TEXTO;

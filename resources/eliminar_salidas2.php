@@ -44,7 +44,7 @@ $contenidodinamico= <<<TEXTO
 
 <input name="camb" type="text" value="$camb" id="Texto6"  />
 
-<input name="insertar" type="submit" value="eliminar" id="bEnviar" />
+<input name="insertar" type="submit" value="Eliminar" id="bEnviar" />
 
 
 </form>

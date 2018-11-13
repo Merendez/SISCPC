@@ -116,7 +116,7 @@ echo ($mimenu);
 <div id="contenido" >
 <div id="insertar" >
 <h1>
-datos de la compra
+Datos de la compra
 </h1>
 
 </br>
@@ -129,13 +129,13 @@ datos de la compra
 
 <input name="precio" type="text" placeholder="precio" id="Texto4" onkeypress="return valida(event)"/>
 
-<input name="idtrabajador" type="text" value="14930226" id="Texto5" onkeypress="return valida(event)"  />
+<input name="idtrabajador" type="text" placeholder="idtrabajador " id="Texto5" onkeypress="return valida(event)"  />
 
 <?php 
 echo ($contenidodinamico);
 ?>
 
-<input name="insertar" type="submit" value="insertar" id="bEnviar" />
+<input name="insertar" type="submit" value="Insertar" id="bEnviar" />
 
 
  

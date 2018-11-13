@@ -78,7 +78,7 @@ echo ($mimenu);
 <div id="contenido" >
 <div id="insertar" >
 <h1>
-datos de los bienes
+Datos de los bienes
 </h1>
 
 </br>
@@ -90,7 +90,7 @@ datos de los bienes
 
 <input name="existencia" type="text" placeholder="existencia" id= "Texto3" onkeypress="return valida(event)" />
 
-<input name="insertar" type="submit" value="insertar" id="bEnviar" />
+<input name="insertar" type="submit" value="Insertar" id="bEnviar" />
 
  
 

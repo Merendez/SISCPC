@@ -39,7 +39,7 @@ Descripcion </br>
 Existencia</br> 
 <input name="existencia" type="text" value="$existencia" id="Texto3" onkeypress="return valida(event)" />
 
-<input name="insertar" type="submit"  value="insertar" id="bEnviar" />
+<input name="insertar" type="submit"  value="Modificar" id="bEnviar" />
 
 </form>
 TEXTO;

@@ -45,7 +45,7 @@ está o no “logueado” un usuario*/
 
 $_SESSION["loggedin"] = true;	
 //$_SESSION["user"] = mysqli_result($myclave,0,0);  //Modifique esta linea original
-$_SESSION["user"] = $myclave; 
+$_SESSION["user"] = $_POST["usuario"]; 
 //nombre del usuario logueado.
 //Direccionamos a nuestra página principal del sistema.
 $usuario1=$_POST["usuario"];

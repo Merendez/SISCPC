@@ -64,7 +64,10 @@ echo ($mimenu);
 
 
 </br>
+<?php
+echo $nombredeusuario;
 
+?>
 <h1> Mision </h1>
 <p> 
 <h3>

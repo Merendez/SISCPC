@@ -77,7 +77,7 @@ echo ($mimenu);
 <div id="contenido" >
 <div id="insertar" >
 <h1>
-datos de la salida
+Datos de la salida
 </h1>
 
 </br>
@@ -93,7 +93,7 @@ datos de la salida
 
 <input name="CAMB" type="text" placeholder="CAMB" id="Texto5"onkeypress="return valida(event)" />
 
-<input name="insertar" type="submit" value="insertar" id="bEnviar" />
+<input name="insertar" type="submit" value="Insertar" id="bEnviar" />
 
  
 

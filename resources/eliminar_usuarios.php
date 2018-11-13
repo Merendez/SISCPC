@@ -39,7 +39,7 @@ mysqli_close($link);
 
 $contenidodinamico= <<<TEXTO
 <form name="form1" action= "./eliminar_usuarios2.php?idTrabajador=" method="post">
-idTrabajador:
+IDtrabajador:
 <select name ="idTrabajador"> echo $combobit;</select>
 <center><input name="validar" type="submit" value = "Validar" /> <br/> </center>
 TEXTO;
@@ -113,7 +113,7 @@ echo ($mimenu);
 
 <div id="contenedor2">
 <div id="contenido" >
-<h1> ELIMINAR BIEN </h1>
+<h1> ELIMINAR USUARIO </h1>
 <div id="insertar" >
 
 <?php 
