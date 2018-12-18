@@ -1,10 +1,10 @@
-﻿	html{
+html{
 	height:100%;
 }
 
     body {
 	height:100%;
-	background:#404a54;
+	background:#57bc90;
 	
 }
 
@@ -19,7 +19,7 @@
 	position:relative;
 	top: 3px;
 	bottom: 0px;
-	background-color: #27a2ff ;
+	background-color: #77c9d4 ;
 	border-radius: 0px 0px;
 	box-shadow: 3px 3px 10px
 	}
@@ -79,11 +79,9 @@
 	height: 150px;
 }
 	
-
-
 	/*Definimos el estilo al mennu principal horizontal aplicando un ancho del 100%*/
 div#menu {
-	background-color: rgba(0,0,51,0.7);
+	background-color: rgba(1,82,73,1);
 	position: relative;
 	top: 5px;
 	width: 71%;
@@ -111,7 +109,7 @@ div#menu a {
   text-decoration: none;      
   color:#069;     
   padding: 4px 25px;      
-   	background-color: rgba(0,0,51,0.7);
+   	background-color: rgba(1,82,73,0.7);
 	text-align:center;
    color: #fff;
   
@@ -122,7 +120,7 @@ letra como el fondo*/
 div#menu a:hover {
 	color: #FFF;
 	 position:relative; 
-	background: #025587;
+	background: #a5a5afb;
 	border-radius: 1px 1px;
 	box-shadow: 3px 3px 3px
 }
@@ -167,7 +165,8 @@ div#menu ul li:hover ul, div#menu ul li ul:hover {
  #barra{
 	font-family: Arial;
 	font-size: 20px;
-	color: #000000;
+	color: #66ff99;
+	background-color: #e8fff0;
 	text-align: center;
 	position: relative;
 	top: 0 px;
@@ -186,7 +185,7 @@ div#menu ul li:hover ul, div#menu ul li ul:hover {
 	margin-top: 10px;
 	margin: auto;
 	margin-bottom: 10px;
-	background-color: #27a2ff;
+	background-color: #77c9d4;
 	border-radius: 0px 0px;
 	box-shadow: 3px 3px 3px
       }
@@ -259,7 +258,7 @@ h4{
 
 a{
  text-decoration: none;
- color: #fff;
+ color: #000000;
  text-align:center
 }
 

@@ -33,7 +33,7 @@ $sql="delete from usuarios where idTrabajador='".$idTrabajador_obtenido."'" ;
 
 if(mysqli_query($link,$sql)){
   echo'<script type="text/javascript">
-    alert("usuario Eliminado Con exito");
+    alert("Usuario Eliminado Con exito");
     window.location.href="eliminar_usuarios.php?idTrabajador=";
     </script>';
 } else {

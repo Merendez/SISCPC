@@ -27,7 +27,7 @@ $sql="UPDATE usuarios SET idTrabajador='".$idTrabajador_obtenido."', contrasena=
 
 if(mysqli_query($link,$sql)){
   echo'<script type="text/javascript">
-    alert("Bien Modificado Con exito");
+    alert("Usuario Modificado Con exito");
     window.location.href="modificar_usuarios.php?camb=";
     </script>';
 } else {

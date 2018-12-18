@@ -29,7 +29,7 @@ $link = mysqli_connect($server,$usuario,$contrasena);
 mysqli_select_db($link,$base);
 
 //Revisando Consulta (query)
-$sql="INSERT INTO BIENES(camb, descripcion, existencia)VALUES('$camb', '$descripcion', '$existencia')";
+$sql="INSERT INTO bienes(camb, descripcion, existencia)VALUES('$camb', '$descripcion', '$existencia')";
 
 if(mysqli_query($link,$sql)){
 	echo'<script type="text/javascript">

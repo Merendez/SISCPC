@@ -12,6 +12,8 @@ include '../lib/seguridad.php';
     
  <link href="estilos_locales/estilo2.css" rel="stylesheet" type="text/css" />
 
+ <link href="estilos_locales/insertar.css" rel="stylesheet" type="text/css" />
+
     <link rel="stylesheet" type="text/css" href="../js/easy-slider-css.css">
 
     

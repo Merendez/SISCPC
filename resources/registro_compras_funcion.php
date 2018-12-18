@@ -35,7 +35,7 @@ $link = mysqli_connect($server,$usuario,$contrasena);
 mysqli_select_db($link,$base);
 
 //Revisando Consulta (query)
-$sql="INSERT INTO COMPRAS(fecha, cantidad, precio, idTRABAJADOR, CAMB)VALUES('$fecha', '$cantidad', '$precio',         '$idTRABAJADOR','$CAMB')";
+$sql="INSERT INTO compras(fecha, cantidad, precio, idTRABAJADOR, CAMB)VALUES('$fecha', '$cantidad', '$precio',         '$idTRABAJADOR','$CAMB')";
 if(mysqli_query($link,$sql)){
 	$sql2 ="update bienes set existencia=existencia+'".$cantidad."' where camb='".$CAMB."'";
 	if(mysqli_query($link,$sql2)){

@@ -39,7 +39,7 @@ $link = mysqli_connect($server,$usuario,$contrasena);
 mysqli_select_db($link,$base);
 
 //Revisando Consulta (query)
-$sql="INSERT INTO TRABAJADOR(idtrabajador,nombre, apellidoPaterno, apellidoMaterno, sexo, direccion, telefono, correo,Puesto)VALUES('$idtrabajador', '$nombre', '$apellidoPaterno', '$apellidoMaterno', '$sexo', '$direccion', '$telefono', '$correo','$puesto')";
+$sql="INSERT INTO trabajador(idtrabajador,nombre, apellidoPaterno, apellidoMaterno, sexo, direccion, telefono, correo,Puesto)VALUES('$idtrabajador', '$nombre', '$apellidoPaterno', '$apellidoMaterno', '$sexo', '$direccion', '$telefono', '$correo','$puesto')";
 
 if(mysqli_query($link,$sql)){
 	echo'<script type="text/javascript">

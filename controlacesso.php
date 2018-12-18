@@ -19,28 +19,45 @@ $nmyclave=mysql_num_rows($myclave);
 if($nmyclave != 0 ){ seccion_start ();
 $_SESSION ["validado"] = "ok";
 $_SESSION ["usuario"]= $myclave;
+//------------------------------
 
+$result= mysqli_query($link, "select * from trabajador,usuarios where trabajador.idtrabajador='".$_POST["usuario"]."' and usuarios.idtrabajador='".$_POST["usuario"]."'" );
 
-$result= mysqli_query($link, "select * from trabajador where idtrabajador='" .htmlentities($_POST{"usuario"})."'" );
 if ($row=mysqli_fetch_array($result, MYSQLI_BOTH)) // si la variable tiene una sola fila entonces seguimos con el codigo
- {
-do{
-$nombre=$row['nombre'];
-$apellidoPaterno=$row['apellidoPaterno'];
-$apellidoMaterno=$row['apellidoMaterno'];
-$sexo=$row['sexo'];
-$direccion=$row['direccion'];
-$telefono=$row['telefono'];
-$correo=$row['correo'];
-$Puesto=$row['Puesto'];
-$_SESSION ["nombre"]= $nombre.$apellidoPaterno.$apellidoMaterno;
 
+ {echo"<script>alert('si if');
+
+</script>";
+
+do{
+
+$nombre=$row['nombre'];
+
+$apellidoPaterno=$row['apellidoPaterno'];
+
+$apellidoMaterno=$row['apellidoMaterno'];
+
+$Tipo=$row['tipo'];
+
+$_SESSION["nombrecompleto"]=$nombre." ".$apellidoPaterno." ".$apellidoMaterno;
+
+$_SESSION["credenciales"]=$Tipo;
+
+echo"<script>alert('si do');
+
+</script>";
 
 } 
+
 while($row=mysqli_fetch_array($result, MYSQLI_BOTH));
-}else{echo"<script>alert('No se afectuo la consulta');
+
+}
+
+else { echo"<script>alert('no buscado');
+
 </script>";}
 
+//------------------------------
 //Guardamos el idtrabajador para enviarlo a la pagina principal
 $idtrabjador=$_POST{"usuario"};
 header ("Location:../principal.php?idtrabajador=$idtrabajador");

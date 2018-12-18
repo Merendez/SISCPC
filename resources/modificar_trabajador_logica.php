@@ -39,11 +39,11 @@ $link = mysqli_connect($server,$usuario,$contrasena);
 mysqli_select_db($link,$base);
 
 //Revisando Consulta (query)
-$sql="UPDATE TRABAJADOR SET idtrabajador='".$idtrabajador."', nombre='".$nombre."',apellidoPaterno='".$apellidoPaterno."',apellidoMaterno='".$apellidoMaterno."',sexo='".$sexo."',direccion='".$direccion."',telefono='".$telefono."',correo='".$correo."',puesto='".$puesto."' WHERE idtrabajador='".$idtrabajador."'";
+$sql="UPDATE trabajador SET idtrabajador='".$idtrabajador."', nombre='".$nombre."',apellidoPaterno='".$apellidoPaterno."',apellidoMaterno='".$apellidoMaterno."',sexo='".$sexo."',direccion='".$direccion."',telefono='".$telefono."',correo='".$correo."',puesto='".$puesto."' WHERE idtrabajador='".$idtrabajador."'";
 
 if(mysqli_query($link,$sql)){
 	echo'<script type="text/javascript">
-    alert("Modificacion Guardado");
+    alert("Registro Guardado");
     window.location.href="modificar_trabajador.php?idtrabajador=";
     </script>';
 } else {

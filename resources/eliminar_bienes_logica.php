@@ -26,7 +26,7 @@ mysqli_select_db($link,$base);
 
 
 //Revisando Consulta (query)
-$sql="delete from BIENES where camb='".$camb_obtenido."'" ;
+$sql="delete from bienes where camb='".$camb_obtenido."'" ;
 
 if(mysqli_query($link,$sql)){
   echo'<script type="text/javascript">

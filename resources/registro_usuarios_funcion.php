@@ -31,7 +31,7 @@ $link = mysqli_connect($server,$usuario,$contrasena);
 mysqli_select_db($link,$base);
 
 //Revisando Consulta (query)
-$sql="INSERT INTO USUARIOS(idTrabajador, contrasena, tipo, estado) VALUES ('$idTrabajador', '$contrasena', '$tipo','$estado')";
+$sql="INSERT INTO usuarios(idTrabajador, contrasena, tipo, estado) VALUES ('$idTrabajador', '$contrasena', '$tipo','$estado')";
 
 if(mysqli_query($link,$sql)){
 	echo'<script type="text/javascript">

@@ -2,7 +2,7 @@
 include '../lib/seguridad.php';
 include("../conexion.php");
 //obteniendo el id trabajador
-$idtrabajador_obtenido=$_GET["idtrabajador"];
+$idtrabajador_obtenido="";
 if($idtrabajador_obtenido== ""){
 // obtener los id trabajador almacenados
 

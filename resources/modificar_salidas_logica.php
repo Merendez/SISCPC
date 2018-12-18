@@ -33,7 +33,7 @@ $link = mysqli_connect($server,$usuario,$contrasena);
 mysqli_select_db($link,$base);
 
 //Revisando Consulta (query)
-$sql="UPDATE SALIDAS SET idsalidas='".$idcompras."', fecha='".$fecha."',cantidad='".$cantidad."',idTRABAJADOR='".$idTRABAJADOR."',CAMB='".$CAMB."' WHERE idsalidas='".$idsalidas."'";
+$sql="UPDATE salidas SET idsalidas='".$idcompras."', fecha='".$fecha."',cantidad='".$cantidad."',idTRABAJADOR='".$idTRABAJADOR."',CAMB='".$CAMB."' WHERE idsalidas='".$idsalidas."'";
 
 if(mysqli_query($link,$sql)){
 	echo'<script type="text/javascript">

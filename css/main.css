@@ -186,7 +186,7 @@ iframe {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(194,194,214,0.9);
+  background-color: rgba(87, 188, 144,0.9);  /*Color de fondo*/
 }
 
 .wrap-login100 {
@@ -196,7 +196,7 @@ iframe {
   padding: 55px 55px 37px 55px;
 
   background: #9152f8;
-  background: -webkit-linear-gradient(top, #0000ff, #7579ff);
+  background: -webkit-linear-gradient(top, #318f9b, #ecf7f9);
   background: -o-linear-gradient(top, #0000ff, #7579ff);
   background: -moz-linear-gradient(top, #0000ff, #7579ff);
   background: linear-gradient(top, #0000ff, #7579ff);

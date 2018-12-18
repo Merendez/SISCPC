@@ -39,7 +39,7 @@ $link = mysqli_connect($server,$usuario,$contrasena);
 mysqli_select_db($link,$base);
 
 //Revisando Consulta (query)
-$sql="delete from TRABAJADOR where idtrabajador='".$idtrabajador."'" ;
+$sql="delete from trabajador where idtrabajador='".$idtrabajador."'" ;
 
 if(mysqli_query($link,$sql)){
 	echo'<script type="text/javascript">

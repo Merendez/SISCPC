@@ -9,9 +9,13 @@ $contenidodinamico= <<<TEXTO
 
 <input name="contrasena" type="text" placeholder="contrasena" id="Texto2" />
 
-<input name="tipo" type="text" placeholder="tipo" id= "Texto3"  />
+<select name ="tipo"> 
+<option value="Administrador">Administrador</option>
+<option value="Supervisor">Supervisor</option>
+<option value="Invitado">Invitado</option>
+</select>
 
-<input name="estado" type="text" placeholder="estado" id= "Texto3" onkeypress="return valida(event)" />
+<input name="estado" type="text" placeholder="estado" id= "Texto4" onkeypress="return valida(event)" />
 
 <input name="insertar" type="submit" value="Insertar" id="bEnviar" />
 TEXTO;
@@ -27,6 +31,8 @@ TEXTO;
  <link href="estilos_locales/estiloprincipal.css" rel="stylesheet" type="text/css" />
     
  <link href="estilos_locales/estilo2.css" rel="stylesheet" type="text/css" />
+
+ <link href="estilos_locales/insertar.css" rel="stylesheet" type="text/css" />
 
     <link rel="stylesheet" type="text/css" href="../js/easy-slider-css.css">
 

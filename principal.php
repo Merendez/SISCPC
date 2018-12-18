@@ -53,6 +53,7 @@ document.getElementById("marco").src=destino
 include ("menu_raiz.php");
 $mimenu=mostrar_menu();
 echo ($mimenu);
+
 ?>
 
 </div><!--div menu -->
@@ -65,7 +66,9 @@ echo ($mimenu);
 
 </br>
 <?php
-echo $nombredeusuario;
+echo "<h3><center> Bienvenido: ".$nombredeusuario."</center></h3>";
+echo " ";
+echo "<h3><center>  ".$credenciales."</center></h3>"; 
 
 ?>
 <h1> Mision </h1>
@@ -94,10 +97,14 @@ Preservar las aguas nacionales y sus bienes públicos inherentes para su adminis
 
 
 </div><!--div contenido-->
+
+<div id="separador">
+  
+
+  
+</div> <!-- fin div enlaces -->
+
 <div id="barra">
-
-
-
 
 
 <div id="enlaces"><center>
@@ -120,7 +127,6 @@ Preservar las aguas nacionales y sus bienes públicos inherentes para su adminis
 
 
 </div><!--div barra-->
-
 
 
 </div><!--fin div contenedor-->

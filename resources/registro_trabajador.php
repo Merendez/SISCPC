@@ -8,9 +8,11 @@ include '../lib/seguridad.php';
 
 <title>SIS CPC</title>
 
- <link href="estilos_locales/estiloprincipal.css" rel="stylesheet" type="text/css" />
+<link href="estilos_locales/estiloprincipal.css" rel="stylesheet" type="text/css" />
     
  <link href="estilos_locales/estilo2.css" rel="stylesheet" type="text/css" />
+
+ <link href="estilos_locales/insertar.css" rel="stylesheet" type="text/css" />
 
     <link rel="stylesheet" type="text/css" href="../js/easy-slider-css.css">
 
@@ -103,6 +105,13 @@ Datos del trabajador
 <input name="insertar" type="submit" value="Insertar" id="bEnviar" />
 
 </form>
+
+
+
+
+
+</div><!--div insertar-->
+
 
 
 

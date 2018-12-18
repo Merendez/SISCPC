@@ -21,7 +21,7 @@ $link = mysqli_connect($server,$usuario,$contrasena);
 mysqli_select_db($link,$base);
 
 //Revisando Consulta (query)
-$sql="UPDATE BIENES SET camb='".$camb_obtenido."', descripcion='".$descripcion_obtenido."',existencia='".$existencia_obtenido."' WHERE camb='".$camb_obtenido."'";
+$sql="UPDATE bienes SET camb='".$camb_obtenido."', descripcion='".$descripcion_obtenido."',existencia='".$existencia_obtenido."' WHERE camb='".$camb_obtenido."'";
 
 if(mysqli_query($link,$sql)){
   echo'<script type="text/javascript">

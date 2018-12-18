@@ -4,7 +4,8 @@
 
 @session_start();
 $id=$_SESSION["user"];
-$nombredeusuario=$_SESSION["nombre"];
+$nombredeusuario=$_SESSION["nombrecompleto"];
+$credenciales=$_SESSION["credenciales"];
 
 
 

@@ -23,11 +23,11 @@ $link = mysqli_connect($server,$usuario,$contrasena);
 mysqli_select_db($link,$base);
 
 //Revisando Consulta (query)
-$sql="UPDATE USUARIOS SET idTrabajador='".$idTrabajador_obtenido."', contrasena='".$contrasena_obtenido."',tipo='".$tipo_obtenido."', estado='".$estado_obtenido."' WHERE idTrabajador='".$idTrabajador_obtenido."'";
+$sql="UPDATE usuarios SET idTrabajador='".$idTrabajador_obtenido."', contrasena='".$contrasena_obtenido."',tipo='".$tipo_obtenido."', estado='".$estado_obtenido."' WHERE idTrabajador='".$idTrabajador_obtenido."'";
 
 if(mysqli_query($link,$sql)){
   echo'<script type="text/javascript">
-    alert("Bien Modificado Con exito");
+    alert("Usuario Modificado Con exito");
     window.location.href="modificar_usuarios.php?idTrabajador=";
     </script>';
 } else {
